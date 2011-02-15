@@ -5,6 +5,7 @@ using System.Text;
 using Microsoft;
 using Microsoft.Xna;
 using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Graphics;
 
 namespace WheelOfLunch2
 {
@@ -13,13 +14,15 @@ namespace WheelOfLunch2
 		private float spinVelocity;
 		private Vector2 center;
 		private float angle;
+		private SpriteBatch spriteBatch;
 
 		public WheelSegment (WheelOfLunch2 game)
 			: base (game)
 		{
 			spinVelocity = 0.0f;
-			center = new Vector2 (game.GraphicsDevice.Viewport.Width / 2, game.GraphicsDevice.Viewport.Height / 2);
+			center = new Vector2 ();
 			angle = 0.0f;
+			spriteBatch = new SpriteBatch (game.GraphicsDevice);
 		}
 
 		public float SpinVelocity
@@ -40,13 +43,11 @@ namespace WheelOfLunch2
 			set { angle = value; }
 		}
 		
-		protected override void LoadContent ()
-		{
-			 base.LoadContent ();
-		}
-
 		public override void Draw (GameTime gameTime)
 		{
+			spriteBatch.Begin ();
+			spriteBatch.End ();
+
 			base.Draw (gameTime);
 		}
 

@@ -19,6 +19,8 @@ namespace WheelOfLunch2
 		GraphicsDeviceManager graphics;
 		SpriteBatch spriteBatch;
 
+		Wheel wheel;
+
 		public WheelOfLunch2 ()
 		{
 			graphics = new GraphicsDeviceManager (this);
@@ -33,7 +35,8 @@ namespace WheelOfLunch2
 		/// </summary>
 		protected override void Initialize ()
 		{
-			// TODO: Add your initialization logic here
+			wheel = new Wheel (this);
+			Components.Add (wheel);
 
 			base.Initialize ();
 		}
