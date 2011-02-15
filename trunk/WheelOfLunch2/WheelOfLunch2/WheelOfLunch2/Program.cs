@@ -10,7 +10,7 @@ namespace WheelOfLunch2
 		/// </summary>
 		static void Main (string [] args)
 		{
-			using (Game1 game = new Game1 ())
+			using (WheelOfLunch2 game = new WheelOfLunch2 ())
 			{
 				game.Run ();
 			}
