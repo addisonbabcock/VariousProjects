@@ -15,6 +15,7 @@ namespace WheelOfLunch2
 		private Vector2 center;
 		private float angle;
 		private SpriteBatch spriteBatch;
+		private Texture2D texture;
 
 		public WheelSegment (WheelOfLunch2 game)
 			: base (game)
@@ -42,10 +43,24 @@ namespace WheelOfLunch2
 			get { return angle; }
 			set { angle = value; }
 		}
+
+		protected override void LoadContent ()
+		{
+			base.LoadContent ();
+
+			texture = Game.Content.Load<Texture2D> ("pieslice");
+		}
+
+		public void RunLoadContent ()
+		{
+			LoadContent ();
+		}
 		
 		public override void Draw (GameTime gameTime)
 		{
 			spriteBatch.Begin ();
+		//	spriteBatch.Draw (texture, new Rectangle (0, 0, 100, 100), Color.Red);
+			spriteBatch.Draw (texture, center, null, Color.Red, Angle, new Vector2 (0.0f, 0.0f), 0.25f, SpriteEffects.None, 0.0f);
 			spriteBatch.End ();
 
 			base.Draw (gameTime);

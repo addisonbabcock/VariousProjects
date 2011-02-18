@@ -25,6 +25,8 @@ namespace WheelOfLunch2
 		{
 			graphics = new GraphicsDeviceManager (this);
 			Content.RootDirectory = "Content";
+
+			IsMouseVisible = true;
 		}
 
 		/// <summary>
@@ -72,6 +74,9 @@ namespace WheelOfLunch2
 			// Allows the game to exit
 			if (GamePad.GetState (PlayerIndex.One).Buttons.Back == ButtonState.Pressed)
 				this.Exit ();
+
+			if (Keyboard.GetState ().IsKeyDown (Keys.Escape))
+				Exit ();
 
 			// TODO: Add your update logic here
 

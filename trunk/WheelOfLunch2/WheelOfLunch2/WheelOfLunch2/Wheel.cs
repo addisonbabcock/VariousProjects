@@ -18,18 +18,22 @@ namespace WheelOfLunch2
 		{
 			wheelSegments = new List<WheelSegment> ();
 
-			for (int i = 0; i < 10; ++i)
-			{
-				WheelSegment segment = new WheelSegment (game);
-				segment.Center = new Vector2 (game.GraphicsDevice.Viewport.X / 2, game.GraphicsDevice.Viewport.Y / 2);
-				segment.Angle = i * 36;
-				wheelSegments.Add (segment);
-			}
 		}
 
 		protected override void LoadContent ()
 		{
 			base.LoadContent ();
+
+			for (int i = 0; i < 10; ++i)
+			{
+				WheelSegment segment = new WheelSegment ((WheelOfLunch2)Game);
+				segment.Center = new Vector2 (Game.GraphicsDevice.Viewport.Width / 2, Game.GraphicsDevice.Viewport.Height / 2);
+				segment.Angle = i * 36;
+				wheelSegments.Add (segment);
+			}
+
+			foreach (WheelSegment segment in wheelSegments)
+				segment.RunLoadContent ();
 		}
 
 		public override void Draw (GameTime gameTime)
