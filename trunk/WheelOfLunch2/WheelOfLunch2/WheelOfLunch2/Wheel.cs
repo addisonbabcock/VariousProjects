@@ -24,11 +24,12 @@ namespace WheelOfLunch2
 		{
 			base.LoadContent ();
 
-			for (int i = 0; i < 10; ++i)
+			int maxSegments = 7;
+			for (int i = 0; i < maxSegments; ++i)
 			{
 				WheelSegment segment = new WheelSegment ((WheelOfLunch2)Game);
 				segment.Center = new Vector2 (Game.GraphicsDevice.Viewport.Width / 2, Game.GraphicsDevice.Viewport.Height / 2);
-				segment.Angle = i * 36;
+				segment.Angle = i * 360 / maxSegments;
 				wheelSegments.Add (segment);
 			}
 

@@ -60,7 +60,16 @@ namespace WheelOfLunch2
 		{
 			spriteBatch.Begin ();
 		//	spriteBatch.Draw (texture, new Rectangle (0, 0, 100, 100), Color.Red);
-			spriteBatch.Draw (texture, center, null, Color.Red, Angle, new Vector2 (0.0f, 0.0f), 0.25f, SpriteEffects.None, 0.0f);
+			spriteBatch.Draw (
+				texture, 
+				Center, 
+				null, 
+				Color.Red, 
+				(float)(Angle * Math.PI / 180.0f), 
+				new Vector2 (texture.Width / 2, 0.0f), 
+				0.25f, 
+				SpriteEffects.None, 
+				0.0f);
 			spriteBatch.End ();
 
 			base.Draw (gameTime);
