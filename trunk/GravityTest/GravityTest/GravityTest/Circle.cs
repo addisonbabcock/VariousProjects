@@ -24,7 +24,7 @@ namespace GravityTest
 			base.Draw (gameTime);
 
 			spriteBatch.Begin ();
-			spriteBatch.Draw (circleImage, new Vector2 (0, 0), Color.White);
+			spriteBatch.Draw (circleImage, currentPosition, Color.White);
 			spriteBatch.End ();
 		}
 
@@ -43,6 +43,26 @@ namespace GravityTest
 		public override void Update (GameTime gameTime)
 		{
 			base.Update (gameTime);
+
+			float frameTime = (float)gameTime.ElapsedGameTime.TotalSeconds;
+			timePassed += frameTime;
+			velocity += acceleration * frameTime;
+			currentPosition += velocity * frameTime;
+		}
+
+		private Vector2 currentPosition;
+		private float timePassed;
+		private Vector2 acceleration;
+		private Vector2 velocity;
+
+		public void Start ()
+		{
+			currentPosition = StartingPosition;
+			acceleration = new Vector2 (0.0f, -9.81f);
+			velocity = new Vector2 ();
+
+			velocity.X = (EndingPosition.X - StartingPosition.X) * Time;
+			velocity.Y = -acceleration.Y * Time;
 		}
 
 		public Vector2 StartingPosition

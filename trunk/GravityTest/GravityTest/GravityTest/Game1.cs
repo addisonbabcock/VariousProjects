@@ -40,6 +40,11 @@ namespace GravityTest
 			// TODO: Add your initialization logic here
 
 			base.Initialize ();
+
+			circle.StartingPosition = new Vector2 (0, GraphicsDevice.Viewport.Height - 64);
+			circle.EndingPosition = new Vector2 (GraphicsDevice.Viewport.Width - 64, GraphicsDevice.Viewport.Height - 64);
+			circle.Time = 2.0f;
+			circle.Start ();
 		}
 
 		/// <summary>
