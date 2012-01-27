@@ -1,0 +1,24 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageManipulator2", "imageshrinker2\ImageManipulator2.csproj", "{A80B1E25-097D-45D4-9C55-7BB78C69DA9B}"
+EndProject
+Global
+	GlobalSection(SubversionScc) = preSolution
+		Svn-Managed = True
+		Manager = AnkhSVN - Subversion Support for Visual Studio
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A80B1E25-097D-45D4-9C55-7BB78C69DA9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A80B1E25-097D-45D4-9C55-7BB78C69DA9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A80B1E25-097D-45D4-9C55-7BB78C69DA9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A80B1E25-097D-45D4-9C55-7BB78C69DA9B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

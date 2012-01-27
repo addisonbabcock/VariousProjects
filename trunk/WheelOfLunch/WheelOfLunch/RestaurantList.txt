@@ -1,0 +1,65 @@
+McDonalds
+False
+Burger King
+True
+Yokozuna
+False
+Mr. Sub
+False
+Quiznos
+True
+BA Jacks
+True
+Brewsters
+False
+Subway
+True
+Taco Del Mar
+True
+Tim Hortons
+True
+A & W
+True
+
+False
+Dairy Queen
+True
+
+False
+
+False
+
+False
+
+False
+
+False
+
+False
+
+False
+
+False
+
+False
+
+False
+
+False
+
+False
+
+False
+
+False
+
+False
+
+False
+
+False
+
+False
+
+False
+
