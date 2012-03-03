@@ -1,7 +1,7 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 9.00
-# Visual Studio 2005
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "imageshrinker", "imageshrinker\imageshrinker.vcproj", "{E8F3A9AC-9D9B-47F4-B4B8-953AF20AFA4A}"
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "imageshrinker", "imageshrinker\imageshrinker.vcxproj", "{E8F3A9AC-9D9B-47F4-B4B8-953AF20AFA4A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
