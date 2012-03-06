@@ -59,7 +59,10 @@
                 ItemTemplate="{StaticResource Standard250x250ItemTemplate}"
                 SelectionMode="None"
                 IsItemClickEnabled="True"
-                ItemClick="ItemView_ItemClick">
+                ItemClick="ItemView_ItemClick" CanReorderItems="True" CanDragItems="True">
+                <GridView.DataContext>
+                    <data:SampleDataSource/>
+                </GridView.DataContext>
 
                 <GridView.ItemsPanel>
                     <ItemsPanelTemplate>                        
