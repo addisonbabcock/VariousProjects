@@ -132,6 +132,7 @@ namespace ImageManipulator2
 				}
 
 				mainForm.IncProcessedSize ();
+                newFile.Close();
 
 				file = listBuffer.Buffer;
 				//System.GC.Collect ();
