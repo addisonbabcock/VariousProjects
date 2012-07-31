@@ -54,7 +54,7 @@ namespace WheelOfLunch
 				pparams.PresentFlag = PresentFlag.LockableBackBuffer;
 				pparams.Windowed = true;
 				pparams.SwapEffect = SwapEffect.Discard;
-//				pparams.MultiSample = MultiSampleType.FourSamples;
+//				pparams.MultiSample = MultiSampleType.TwoSamples;
 //				pparams.MultiSampleQuality = 2;
 
 				m_d3ddev = new Device (0, DeviceType.Hardware, this, 

@@ -10,7 +10,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration ("")]
 [assembly: AssemblyCompany ("Oh Shit It's the End of the Internet!")]
 [assembly: AssemblyProduct ("Wheel Of Lunch")]
-[assembly: AssemblyCopyright ("Copyright ©  2009")]
+[assembly: AssemblyCopyright ("Copyright ©  2012")]
 [assembly: AssemblyTrademark ("")]
 [assembly: AssemblyCulture ("")]
 
