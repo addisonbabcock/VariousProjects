@@ -7,7 +7,6 @@ using Microsoft.Xna;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 
-
 namespace WheelOfLunch2
 {
 	class Wheel : DrawableGameComponent
