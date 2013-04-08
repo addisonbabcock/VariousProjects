@@ -12,5 +12,6 @@
         <TextBlock FontSize="72" Margin="10,10,-10,-10">
             Wheel Of Lunch
         </TextBlock>
+        <Polygon Fill="AliceBlue" Points="0,0 100,100, 50, 100" />
     </Grid>
 </Page>
